@@ -18,7 +18,7 @@ with col1:
         st.info("Adicione sua foto em assets/profile.webp")
 
 with col2:
-    st.subheader("Como posso ajudar")
+    st.subheader("Um pouco sobre minha carreira:")
     st.write(
         """Especialista em Business Intelligence com experiência em Power BI, SQL e Python, focado em transformar dados em insights estratégicos que otimizam processos e impulsionam resultados.
 
