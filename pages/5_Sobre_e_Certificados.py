@@ -1,4 +1,5 @@
 import streamlit as st
+from pathlib import Path
 
 st.subheader("Sobre mim")
 st.write(
@@ -8,8 +9,23 @@ st.write(
 )
 
 st.subheader("Certificações & Currículo")
-st.write("[Acesse meu perfil no Creadly para ver minhas certificações](https://www.credly.com/users/gelsonluizmoraes/badges)")
+st.write("[Acesse meu perfil no Credly para ver minhas certificações](https://www.credly.com/users/gelsonluizmoraes/badges)")
 st.write("[Aqui você encontra meu Lattes](http://lattes.cnpq.br/9164802305306227)")
-st.write("[E aqui está meu Linkedin](https://www.linkedin.com/in/gelson-moraes/)")
+st.write("[E aqui está meu LinkedIn](https://www.linkedin.com/in/gelson-moraes/)")
 
-st.download_button("Baixar CV (PDF)", data=b"", file_name="Curriculo - Gelson Luiz Moraes.pdf", disabled=True, help="Substitua com seu PDF.")
+# Caminho do currículo PDF
+pdf_path = Path("assets/Curriculo - Gelson Luiz Moraes.pdf")
+
+# Verifica se o arquivo existe antes de disponibilizar
+if pdf_path.exists():
+    with open(pdf_path, "rb") as pdf_file:
+        pdf_bytes = pdf_file.read()
+    st.download_button(
+        label="📄 Baixar Currículo (PDF)",
+        data=pdf_bytes,
+        file_name=pdf_path.name,
+        mime="application/pdf",
+        help="Clique para baixar o currículo completo em PDF."
+    )
+else:
+    st.warning("⚠️ Currículo ainda não disponível. Adicione o PDF na pasta `assets` para habilitar o download.")
