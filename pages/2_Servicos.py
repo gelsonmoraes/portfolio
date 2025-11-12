@@ -17,7 +17,7 @@ rows = [
      "desc": "Automação de tarefas e integrações.",
      "items": ["Integração REST", "SQL/NoSQL", "Automação", "Web scraping"]},
     {"title": "Cursos e Treinamentos",
-     "desc": "Cursos e treinamentos personalizados, presenciais ou online.",
+     "desc": "Cursos e treinamentos personalizados presenciais ou online.",
      "items": ["Power BI", "Excel","Python", "Lógica de Programação"]},
     {"title": "Sites institucionais",
      "desc": "Sua empresa na internet.",
