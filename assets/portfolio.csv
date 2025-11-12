@@ -1,0 +1,13 @@
+titulo,cliente,ano,setor,tags,imagem,descricao,abordagem,resultados
+Vendas,Sigiloso,2024,Saúde,Cirurgias,ascir1.png,Monitoramento de vendas e realizações de cirurgias,Monitoramento de vendas e performance de vendas,Apoio à equipe de vendas e aumento de leads engajamento de franquias
+Vendas2,Sigiloso,2025,Alimentos,Alimentos,ns1Comercial.png,Monitoramento de vendas e performance de vendas,Apoio às lideranças das equipes de vendas nas franquias,Aumento de leads e engajamento
+Vendas3,Sigiloso,2025,Alimentos,Alimentos,ns2Comercial.png,Monitoramento de vendas e performance de vendas,Apoio às lideranças das equipes de vendas nas franquias,Aumento de leads e engajamento
+Vendas4,Sigiloso,2025,Alimentos,Alimentos,ns3Comercial.png,Monitoramento de vendas e performance de vendas,Apoio às lideranças das equipes de vendas nas franquias,Aumento de leads e engajamento
+Monitoramento,Sigiloso,2023,Negócios,Operações,mopas.png,Dashboard para monitoramento da equipe operacional da empresa,Monitoramento de chamados abertos por períodos,Melhoria de alocação das equipes e insights para gestores
+Monitoramento2,Sigiloso,2023,Negócios,Operações,msoas.png,Dashboard para monitoramento das solicitações internas da empresa,Monitoramento de status de chamados,Melhoria de alocação das equipes e insights para gestores
+Monitoramento3,Sigiloso,2023,Negócios,Operações,mtaas.png,Dashboard para monitoramento das tarefas internas da empresa,Monitoramento de status de tarefas,Melhoria de alocação das equipes e insights sobre tipos de tarefas que demandam mais tempo de cada setor
+Agenda1,Sigiloso,2022,Saúde,Ambulatorial,magas.png,Dashboard para acompanhar horários disponibilizados em agendas médicas,Acompanha a disponibilidade de agenda de clínicas particulares,Melhoria na alocação de médicos e profissionais da saúde conforme demanda
+Agenda2,Sigiloso,2022,Saúde,Ambulatorial,matas.png,Dashboard para acompanhar atendimentos conforme disponibilidade de horários,Acompanha a taxa de usuários agendados e atendidos,Melhoria na alocação de médicos e profissionais da saúde conforme demanda
+Agenda3,Sigiloso,2022,Saúde,Ambulatorial,meas.png,Dashboard para acompanhar horários indices de disponibilidade e ocupação de agenda médica,Acompanha a disponibilidade e ocupação de agenda de clínicas particulares,Melhoria na alocação de médicos e profissionais da saúde conforme demanda
+Comercial,Sigiloso,2025,Saúde,Comercial,netclix.png,Dashboard de análise exploratória do perfil e clientes,Detalha o perfil do cliente da atual base,Melhoria na alocação de recursos de marketing
+Educação,Instituto Melody,2025,Educação,Ensino,iam.png,Site institucional,Site institucional para presença digital da emprsa,Melhoria na presença digital e captação de alunos
