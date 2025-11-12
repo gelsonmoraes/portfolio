@@ -6,7 +6,7 @@ import matplotlib.dates as mdates
 
 st.set_page_config(layout="wide")
 st.title("Dashboard de Desempenho — Motorista de Aplicativo")
-st.caption("Análise automática de ganhos, distância e eficiência por dia e período. Este dashboard é atualizado em tempo real a partir dos dados do Google Sheets.")
+st.caption("Análise automática de ganhos, distância e eficiência por dia e período. Este dashboard é atualizado em tempo real a partir dos dados de uma planilha real do Google Sheets criada e compartilhada por um profissional que trabalha como motorista de app em suas hora vagas.")
 
 # ==================================
 # 1️⃣ Carregar dados do Google Sheets
@@ -101,13 +101,34 @@ df_filtered = df.loc[mask].copy()
 # ==================================
 # 3️⃣ Métricas principais (KPIs)
 # ==================================
+
+st.markdown("""
+    <style>
+    div[data-testid="stMetric"] {
+        background-color: #f8f9fa;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+    [data-testid="stMetricValue"] {
+        font-size: 1.5rem;
+        color: #0072B2;
+    }
+    [data-testid="stMetricLabel"] {
+        font-size: 0.5rem;
+        color: #555;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 col0, col1, col2, col3, col4, col5 = st.columns(6)
 
 col0.metric("Dias Trabalhados", f"{df_filtered['Data'].nunique()} dias")
 col1.metric("Total de Km", f"{df_filtered['Total de Km'].sum():,.0f} km")
-col2.metric("Gasto com Combustível (R$)", f"R$ {df_filtered['Gasto combustível'].sum():,.2f}")
-col3.metric("Ganho Bruto Total (R$)", f"R$ {df_filtered['Ganho Bruto (R$)'].sum():,.2f}")
-col4.metric("Ganho Líquido Total (R$)", f"R$ {df_filtered['Ganho líquido'].sum():,.2f}")
+col2.metric("Gasto com Combust.", f"R$ {df_filtered['Gasto combustível'].sum():,.2f}")
+col3.metric("Ganho Bruto Total", f"R$ {df_filtered['Ganho Bruto (R$)'].sum():,.2f}")
+col4.metric("Ganho Líquido Total", f"R$ {df_filtered['Ganho líquido'].sum():,.2f}")
 col5.metric("Taxa Média de Lucro", f"{df_filtered['Taxa de lucro'].mean() * 100:.1f}%")
 
 st.divider()
