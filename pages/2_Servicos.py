@@ -11,7 +11,7 @@ rows = [
      "desc": "Interfaces rápidas para dados e relatórios gerenciais.",
      "items": ["Layouts responsivos", "Filtros/estado", "Upload & export", "Múltiplas páginas"]},
     {"title": "Análise de Dados",
-     "desc": "ETL com pandas, Power Query, exploração e visualizações.",
+     "desc": "ETL com Pandas, Power Query, exploração e visualizações.",
      "items": ["Limpeza/qualidade", "KPIs", "Storytelling visual", "Entrega reprodutível"]},
     {"title": "Backends em Python",
      "desc": "Automação de tarefas e integrações.",
